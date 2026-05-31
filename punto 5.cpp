@@ -1,33 +1,38 @@
-#include <iostream>
+#include <iostream>;
 using namespace std;
-
 int main()
 {
-    int n;
-    int d = 2;
-    int contador = 0;
+    long long n;
+    int pasos = 0;
+    cout << "coloque un numero positivo mayor que 1.\n";
     cin >> n;
-   
+
     if (n <= 1)
     {
+        cout << "ponga un numero correcto";
         return 0;
     }
-    while (n > 1)
+    long long maximo = n;
+    cout << n;
+
+    while (n != 1)
     {
-        if (n % d == 0) {
-
-            cout << " " << d << " ";
-            n = n / d;
-            contador++;
-
-            if (n > 1)
-                cout << "x";
+        if (n % 2 == 0)
+        {
+            n = n / 2;
         }
-            else
-                d++;
+        else
+        {
+            n = n * 3 + 1;
+        }
+        pasos++;
+        cout << " -> " << n;
+        if (n > maximo)
+        {
+            maximo = n;
+        }
         
+    }
+    cout << "\n" << "se dieron " << pasos << " pasos";
+    cout << "\n" << "el numero maximo es: " << maximo;
 }
-    cout << contador;
-}
-
-
