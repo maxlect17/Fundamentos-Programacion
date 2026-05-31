@@ -1,0 +1,3 @@
+﻿  Punto 4 parcial.cpp
+C:\Users\maxle\source\repos\Punto 4 parcial\Punto 4 parcial\Punto 4 parcial.cpp(31,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Punto 4 parcial.vcxproj -> C:\Users\maxle\source\repos\Punto 4 parcial\x64\Debug\Punto 4 parcial.exe
